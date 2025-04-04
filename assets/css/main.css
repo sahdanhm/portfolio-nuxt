@@ -1,1 +1,31 @@
 @import "tailwindcss";
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.alexandria-bold {
+  font-family: Alexandria, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.color1-text {
+  color: #ff0000;
+}
+
+.color1-bg {
+  background-color: #ff0000;
+}
+
+.title {
+  font-weight: bold;
+  font-size: var(--text-2xl);
+  line-height: var(--text-2xl--line-height);
+  width: 80%;
+  margin-bottom: calc(var(--spacing) * 3);
+  font-family: 'Alexandria', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
