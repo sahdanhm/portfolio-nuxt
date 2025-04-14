@@ -1,8 +1,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue';
-
 const isMenuOpen = ref(false);
-const url = useRequestURL();
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
@@ -35,13 +33,13 @@ onUnmounted(() => {
   >
     <nav class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center">
       <div class="flex items-center justify-between sm:me-auto">
-        <a
+        <NuxtLink
           class="flex-none text-2xl focus:opacity-80 alexandria-bold"
           href="/"
           aria-label="Brand"
         >
           syahdan
-        </a>
+        </NuxtLink>
         <div class="sm:hidden">
           <DropdownLanguage />
         </div>
@@ -94,52 +92,35 @@ onUnmounted(() => {
       </div>
       <div
         :class="{ hidden: !isMenuOpen }"
-        id="navbar-menu"
         class="sm:block absolute sm:relative right-3 left-3 sm:right-0 sm:left-0 mt-5 sm:mt-0 px-5 pb-5 sm:px-0 sm:pb-0 rounded-2xl bg-white sm:bg-transparent shadow-2xl sm:shadow-none"
-        aria-labelledby="navbar-menu"
       >
         <div
           class="flex flex-col mt-5 sm:gap-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0"
+          id="navbar-menu"
         >
-          <a
-            :class="{
-              'color1-text': url.pathname === '/',
-              'transition-[padding] sm:transition-transform duration-300 active:duration-100 ease-in-out active:ps-10 hover:ps-10 sm:active:ps-0 sm:hover:scale-150 sm:active:scale-150 sm:hover:ps-0':
-                url.pathname !== '/',
-            }"
-            class="font-medium py-2 sm:py-0"
-            href="/"
-            >Home</a
+          <NuxtLink
+            exact-active-class="color1-text"
+            class="font-medium py-2 sm:py-0 transition-[padding] sm:transition-transform duration-300 active:duration-100 ease-in-out active:ps-10 hover:ps-10 sm:active:ps-0 sm:hover:scale-150 sm:active:scale-150 sm:hover:ps-0"
+            to="/"
+            >Home</NuxtLink
           >
-          <a
-            :class="{
-              'color1-text': url.pathname === '/works',
-              'transition-[padding] sm:transition-transform duration-300 active:duration-100 ease-in-out active:ps-10 hover:ps-10 sm:active:ps-0 sm:hover:scale-150 sm:active:scale-150 sm:hover:ps-0':
-                url.pathname !== '/works',
-            }"
-            class="font-medium py-2 sm:py-0"
-            href="/works"
-            >Works</a
+          <NuxtLink
+            active-class="color1-text"
+            class="font-medium py-2 sm:py-0 transition-[padding] sm:transition-transform duration-300 active:duration-100 ease-in-out active:ps-10 hover:ps-10 sm:active:ps-0 sm:hover:scale-150 sm:active:scale-150 sm:hover:ps-0"
+            to="/works"
+            >Works</NuxtLink
           >
-          <a
-            :class="{
-              'color1-text': url.pathname === '/contact',
-              'transition-[padding] sm:transition-transform duration-300 active:duration-100 ease-in-out active:ps-10 hover:ps-10 sm:active:ps-0 sm:hover:scale-150 sm:active:scale-150 sm:hover:ps-0':
-                url.pathname !== '/contact',
-            }"
-            class="font-medium py-2 sm:py-0"
-            href="/contact"
-            >Contact</a
+          <NuxtLink
+            active-class="color1-text"
+            class="font-medium py-2 sm:py-0 transition-[padding] sm:transition-transform duration-300 active:duration-100 ease-in-out active:ps-10 hover:ps-10 sm:active:ps-0 sm:hover:scale-150 sm:active:scale-150 sm:hover:ps-0"
+            to="/contact"
+            >Contact</NuxtLink
           >
-          <a
-            :class="{
-              'color1-text': url.pathname === '/about-me',
-              'transition-[padding] sm:transition-transform duration-300 active:duration-100 ease-in-out active:ps-10 hover:ps-10 sm:active:ps-0 sm:hover:scale-150 sm:active:scale-150 sm:hover:ps-0':
-                url.pathname !== '/about-me',
-            }"
-            class="font-medium py-2 sm:py-0"
-            href="/about-me"
-            >About me</a
+          <NuxtLink
+            active-class="color1-text"
+            class="font-medium py-2 sm:py-0 transition-[padding] sm:transition-transform duration-300 active:duration-100 ease-in-out active:ps-10 hover:ps-10 sm:active:ps-0 sm:hover:scale-150 sm:active:scale-150 sm:hover:ps-0"
+            to="/about-me"
+            >About me</NuxtLink
           >
         </div>
       </div>
