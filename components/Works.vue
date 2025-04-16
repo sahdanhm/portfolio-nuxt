@@ -64,13 +64,13 @@ const works = [
           </div>
         </div>
         <div class="lg:col-span-2">
-          <h1 class="alexandria-bold color1-text text-3xl">
+          <h1 class="alexandria-bold color1-text text-2xl sm:text-3xl">
             <NuxtLink :to="`/works/${work.id}`" class="hover:underline">{{
               work.name
             }}</NuxtLink>
           </h1>
           <p class="text-gray-400 text-xs">{{ work.company }}</p>
-          <p class="lg:text-xl mt-3">
+          <p class="sm:text-2xl mt-3">
             {{ work.description }}
           </p>
         </div>

@@ -38,7 +38,7 @@
         >
           <NuxtLink to="/works">See all works >>></NuxtLink>
         </p>
-        <p class="mb-10 text-xl">Here are top three of his works:</p>
+        <p class="mb-10 sm:text-2xl">Here are top three of his works:</p>
         <Works />
         <NuxtLink to="/works">
           <button
@@ -47,6 +47,15 @@
             See more...
           </button>
         </NuxtLink>
+      </div>
+    </div>
+    <div class="grid lg:grid-cols-2 p-3 pt-5">
+      <div class="section">
+        <h1 class="title">
+          Wanna <span class="color1-text">know</span> something?
+        </h1>
+        <p class="mb-10 sm:text-2xl">I love to <span class="color1-text">study</span> everything, so that’s why I’d love to share some of <span class="color1-text">my knowledge</span>.</p>
+        <SlideshowKnowledge />
       </div>
     </div>
   </main>
