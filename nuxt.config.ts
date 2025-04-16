@@ -19,8 +19,8 @@ export default defineNuxtConfig({
     display: 'swap',
     useStylesheet: true,
   },
-  devServer: {
-    host: '0.0.0.0',
-    port: 8000,
-  },
+  // devServer: {
+  //   host: '0.0.0.0',
+  //   port: 8000,
+  // },
 });

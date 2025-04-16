@@ -8,6 +8,7 @@ const onMouseLeave = (e) => {
 </script>
 <template>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-content-center gap-3">
+    <!-- Looping -->
     <div
       class="bg-[#d9d9d9]/30 p-3 rounded-xl flex transition duration-400 hover:shadow-md hover:scale-102 lg:hover:-translate-y-2"
       @mouseenter="onHover"
@@ -28,6 +29,7 @@ const onMouseLeave = (e) => {
         </p>
       </div>
     </div>
+    <!-- Looping end -->
     <div
       class="bg-[#d9d9d9]/30 p-3 rounded-xl flex transition duration-400 hover:shadow-md hover:scale-102 lg:hover:-translate-y-2"
      @mouseenter="onHover"
