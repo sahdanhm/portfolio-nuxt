@@ -40,7 +40,7 @@
         <div>
           <div class="flex space-x-3">
             <a
-              href="https://www.instagram.com/lpk.tsukubaindonesia/"
+              href="https://www.instagram.com/sahdanhm/"
               class="w-10 h-10 flex items-center justify-center grayscale-100 hover:grayscale-0 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500 text-white rounded-full transition-transform duration-300 transform hover:scale-110"
               target="__blank"
               ><svg
@@ -56,7 +56,7 @@
               </svg>
             </a>
             <a
-              href="https://wa.me/6282316396737"
+              href="https://wa.me/6285183138321"
               class="w-10 h-10 flex items-center justify-center grayscale-100 hover:grayscale-0 bg-green-500 text-white rounded-full transition-transform duration-300 transform hover:scale-110"
               target="__blank"
               ><svg

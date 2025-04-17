@@ -54,8 +54,18 @@
         <h1 class="title">
           Wanna <span class="color1-text">know</span> something?
         </h1>
-        <p class="mb-10 sm:text-2xl">I love to <span class="color1-text">study</span> everything, so that’s why I’d love to share some of <span class="color1-text">my knowledge</span>.</p>
+        <p class="mb-10 sm:text-2xl">
+          I love to <span class="color1-text">study</span> everything, so that’s
+          why I’d love to share some of
+          <span class="color1-text">my knowledg</span>.
+        </p>
         <SlideshowKnowledge />
+      </div>
+      <div class="section lg:px-[4vw]">
+        <h1 class="title">
+          Wanna <span class="color1-text">contact</span> me?
+        </h1>
+        <Contact />
       </div>
     </div>
   </main>
