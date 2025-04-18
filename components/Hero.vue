@@ -1,18 +1,55 @@
+<script setup>
+import { useTypewriter } from '@/composables/useTypewriter';
+import { onUpdated, onMounted } from 'vue';
+
+const texts = ['Study', 'Reptiles', 'Code', 'You'];
+
+const { currentText } = useTypewriter(texts, 100, 1000, 1000 * 2);
+function getStyle() {
+  const heroText = document.getElementById('heroText');
+  const heroTextAnimated = document.getElementById('heroTextAnimated');
+  if (heroText) {
+    const style = window.getComputedStyle(heroText);
+    heroTextAnimated.style.paddingLeft = style.marginLeft;
+  }
+  console.log(heroText);
+}
+onUpdated(() => {
+  getStyle();
+});
+onMounted(() => {
+  getStyle();
+});
+</script>
 <template>
   <div class="grid lg:grid-cols-2 h-full sm:h-screen">
-    <div class="grid content-start lg:place-content-center text-8xl sm:text-9xl">
-      <div class="font-bold">
-        <h1>I</h1>
+    <div class="self-center text-[20vw] sm:text-9xl">
+      <div id="heroText" class="lg:mx-auto w-fit">
+        <h1 class="font-bold">I</h1>
+        <h1 class="font-bold">Love</h1>
       </div>
-      <div class="font-bold">
-        <h1>Love</h1>
-      </div>
-      <div class="font alexandria-bold color1-text">
-        <h1>Study</h1>
+      <div class="alexandria-bold color1-text" id="heroTextAnimated">
+        <h1>{{ currentText }}<span class="blink font-normal">|</span></h1>
       </div>
     </div>
     <div class="grid place-content-center">
-      <img src="~/assets/img/einstein.png" alt="Hero-image"/>
+      <img src="~/assets/img/einstein.png" alt="Hero-image" />
     </div>
   </div>
 </template>
+<style scoped>
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+</style>
