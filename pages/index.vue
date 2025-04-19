@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup>
+const me = [{ image: '/img/me.png' }];
+</script>
 <template>
   <Hero />
   <main>
@@ -6,12 +8,19 @@
       <div class="section">
         <h1 class="title">Did you know?</h1>
         <div class="grid md:grid-cols-2 place-items-center">
-          <NuxtLink to="/about-me" class="w-fit">
-            <img src="~/assets/img/me.png" class="" alt="Image" />
+          <NuxtLink to="/about-him" class="w-fit">
+            <NuxtImg
+              format="webp"
+              :src="me[0].image"
+              alt="Image"
+              width="500"
+              height="500"
+              layout="responsive"
+            />
           </NuxtLink>
           <div class="">
             <NuxtLink
-              to="/about-me"
+              to="/about-him"
               class="text-5xl font alexandria-bold color1-text sm:text-7xl xl:text-9xl hover:underline"
             >
               Syahdan
@@ -55,15 +64,15 @@
           Wanna <span class="color1-text">know</span> something?
         </h1>
         <p class="mb-10 sm:text-2xl">
-          I love to <span class="color1-text">study</span> everything, so that’s
-          why I’d love to share some of
-          <span class="color1-text">my knowledg</span>.
+          He loves to <span class="color1-text">study</span> everything, so
+          that’s why he’d love to share some of
+          <span class="color1-text">his knowledge.</span>
         </p>
         <SlideshowKnowledge />
       </div>
       <div class="section lg:px-[4vw]">
         <h1 class="title">
-          Wanna <span class="color1-text">contact</span> me?
+          Wanna <span class="color1-text">contact</span> him?
         </h1>
         <Contact />
       </div>

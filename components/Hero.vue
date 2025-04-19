@@ -3,6 +3,7 @@ import { useTypewriter } from '@/composables/useTypewriter';
 import { onUpdated, onMounted } from 'vue';
 
 const texts = ['Study', 'Reptiles', 'Code', 'You'];
+const heroImage = [{ image: '/img/einstein.png' }];
 
 const { currentText } = useTypewriter(texts, 100, 1000, 1000 * 2);
 function getStyle() {
@@ -12,7 +13,6 @@ function getStyle() {
     const style = window.getComputedStyle(heroText);
     heroTextAnimated.style.paddingLeft = style.marginLeft;
   }
-  console.log(heroText);
 }
 onUpdated(() => {
   getStyle();
@@ -33,7 +33,14 @@ onMounted(() => {
       </div>
     </div>
     <div class="grid place-content-center">
-      <img src="~/assets/img/einstein.png" alt="Hero-image" />
+      <NuxtImg
+        format="webp"
+        :src="heroImage[0].image"
+        alt="Hero-image"
+        width="500"
+        height="500"
+        layout="responsive"
+      />
     </div>
   </div>
 </template>

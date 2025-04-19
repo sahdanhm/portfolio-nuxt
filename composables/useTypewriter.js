@@ -27,7 +27,6 @@ export function useTypewriter(
         const arrText = currentText.value.split('');
         arrText.splice(charIndex2, 1);
         currentText.value = arrText.join('');
-        console.log(currentText.value);
         if (charIndex2 < 0) {
           setTimeout(() => {
             charIndex = 0;

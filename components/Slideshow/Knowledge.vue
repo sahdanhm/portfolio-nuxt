@@ -14,13 +14,13 @@ const carouselConfig = {
 const knowledges = [
   {
     id: 1,
-    image: 'einstein.png',
+    image: '/img/einstein.png',
     source: [{ title: 'syahdan', link: null }],
     description: `Did you know? Albert Einstein is one of the most genius man in the world. He is the one who developed theory of relativity which denied our past belief. We believed that time was constant but Einstein believed otherwise, he believed that time was relative. Have you ever heard about time dilation? that is one of the idea from this theory.`,
   },
   {
     id: 2,
-    image: 'me.png',
+    image: '/img/me.png',
     source: [
       { title: 'wikipedia.com', link: 'wikipedia.com' },
       { title: 'wikipedia.com', link: 'wikipedia.com' },
@@ -52,7 +52,7 @@ Consectetur praesentium nesciunt eum repellendus itaque ipsam animi vel veritati
           :class="{ 'opacity-50 scale-50': isNext || isPrev }"
         >
           <div class="md:order-last">
-            <img :src="`/img/${knowledge.image}`" />
+            <NuxtImg :src="knowledge.image" format="webp" alt="Image" />
           </div>
           <div class="text-xs sm:text-base">
             <p>{{ knowledge.description }}</p>

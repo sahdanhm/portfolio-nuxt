@@ -16,20 +16,20 @@ const skills = [
     id: 3,
     image: '/img/logo-tailwindcss.png',
     title: 'Tailwind CSS',
-    description: ` Even he is a back-end developer, he can use Tailwind CSS to make a
+    description: `Even he is a back-end developer, he can use Tailwind CSS to make a
           good-looking website.`,
   },
   {
     id: 4,
     image: '/img/logo-php.svg',
     title: 'PHP',
-    description: `This is the fundamental of Laravel as a PHP Framework. And I'm also good at this.`,
+    description: `This is the fundamental of Laravel as a PHP Framework. And he's also good at this.`,
   },
   {
     id: 5,
     image: '/img/logo-bootsrap.svg',
     title: 'Bootsrap',
-    description: `This CSS Framework is my first framework i've ever used. I have a lot experience working on it.`,
+    description: `This CSS Framework is his first framework he has ever used. He has a lot experience on using it.`,
   },
 ];
 
@@ -54,7 +54,8 @@ const onMouseLeave = (e) => {
       :key="index.id"
     >
       <div class="justify-self-center w-2/3 transition duration-400 grayscale">
-        <img
+        <NuxtImg
+          format="webp"
           :src="skill.image"
           :alt="`${skill.title}-logo`"
           class="w-full h-auto"

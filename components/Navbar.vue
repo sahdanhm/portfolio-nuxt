@@ -119,8 +119,8 @@ onUnmounted(() => {
           <NuxtLink
             active-class="color1-text"
             class="font-medium py-2 sm:py-0 transition-[padding] sm:transition-transform duration-300 active:duration-100 ease-in-out active:ps-10 hover:ps-10 sm:active:ps-0 sm:hover:scale-150 sm:active:scale-150 sm:hover:ps-0"
-            to="/about-me"
-            >About me</NuxtLink
+            to="/about-him"
+            >About him</NuxtLink
           >
         </div>
       </div>

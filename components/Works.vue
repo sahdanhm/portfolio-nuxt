@@ -18,7 +18,7 @@ const works = [
     id: 1,
     name: 'Compro Koyasai',
     company: 'PT Koyasai Indonesia',
-    image: 'work-1.png',
+    image: '/img/work-1.png',
     description:
       'Compro (Company Profile) Koyasai is a company profile website which is used to introduce the company to the public. This website is built using Nuxt.js for the front-end side and Laravel for the back-end side.',
   },
@@ -26,7 +26,7 @@ const works = [
     id: 2,
     name: 'Compro LPK Tsukuba',
     company: 'LPK Tsukuba Indonesia',
-    image: 'work-2.png',
+    image: '/img/work-2.png',
     description: `Compro (Company Profile) LPK Tsukuba is a company profile website which is used to introduce the company to the public and introduce their program to work in Japan. If you are interested in working at Japan, go check their website. This website is built using Vue.js for the front-end side and Laravel for the back-end side.`,
   },
 ];
@@ -55,9 +55,10 @@ const works = [
             :id="`work-image-${index}`"
           >
             <NuxtLink :to="`/works/${work.id}`">
-              <img
-                :src="`/img/${work.image}`"
-                alt="Image"
+              <NuxtImg
+                format="webp"
+                :src="work.image"
+                :alt="`${work.title}-image`"
                 class="object-cover"
               />
             </NuxtLink>
