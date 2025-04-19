@@ -1,3 +1,6 @@
+<script setup>
+const contactImage = [{ image: '/img/me.png' }];
+</script>
 <template>
   <div class="py-10 px-3">
     <h1 class="title mb-5">
@@ -8,11 +11,17 @@
         <Contact />
       </div>
       <div class="hidden lg:block">
-        <div class="w-2/3 mx-auto">
-          <img src="~/assets/img/me.png" />
-        </div>
+        <NuxtImg
+          format="webp"
+          :src="contactImage[0].image"
+          class="mx-auto"
+          alt="Image"
+          width="400"
+          height="400"
+          layout="responsive"
+        />
         <h1 class="alexandria-bold text-2xl text-center">
-          Let's connect with me!!
+          " Let's connect with me!! "
         </h1>
       </div>
     </div>
