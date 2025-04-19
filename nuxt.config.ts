@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
-  modules: ['@nuxtjs/google-fonts'],
+  modules: ['@nuxtjs/google-fonts','@nuxt/image'],
   googleFonts: {
     families: {
       Alexandria: {
@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     useStylesheet: true,
   },
   // devServer: {
-  //   host: '0.0.0.0',
+  //   host: '192.168.19.22',
   //   port: 8000,
   // },
 });
