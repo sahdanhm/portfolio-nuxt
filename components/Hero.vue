@@ -3,7 +3,7 @@ import { useTypewriter } from '@/composables/useTypewriter';
 import { onUpdated, onMounted } from 'vue';
 
 const texts = ['Study', 'Reptiles', 'Code', 'You'];
-const heroImage = [{ image: '/img/einstein.png' }];
+const heroImage = [{ image: '/img/me2.png' }];
 
 const { currentText } = useTypewriter(texts, 100, 1000, 1000 * 2);
 function getStyle() {

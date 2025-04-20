@@ -1,4 +1,6 @@
 <script setup>
+import { ref } from 'vue';
+const next = ref();
 const onFocus = (e) => {
   e.target.previousSibling.classList.add('color1-text');
 };
@@ -8,10 +10,17 @@ const blur = (e) => {
 const divOnClick = (e) => {
   e.target.lastChild.focus();
 };
+const onSubmit = () => {
+  next.value.value = useRequestURL();
+};
 </script>
 <template>
-  <form action="https://formsubmit.co/sahdanhusna057@gmail.com" method="post">
-    <input type="hidden" name="_next" :value="useRequestURL()" />
+  <form
+    action="https://formsubmit.co/sahdanhusna057@gmail.com"
+    method="post"
+    @submit="onSubmit"
+  >
+    <input type="hidden" name="_next" ref="next" />
     <input type="hidden" name="_captcha" value="false" />
     <div class="grid gap-3">
       <div @click="divOnClick">

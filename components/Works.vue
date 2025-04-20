@@ -76,7 +76,7 @@ const works = [
           </p>
         </div>
       </div>
-      <hr class="border-none h-0.5 bg-[#ff0000]/15 rounded-full" />
+      <hr class="border-none h-0.5 color1-bg-15 rounded-full" />
     </div>
   </div>
 </template>

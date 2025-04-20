@@ -20,22 +20,9 @@ const knowledges = [
   },
   {
     id: 2,
-    image: '/img/me.png',
-    source: [
-      { title: 'wikipedia.com', link: 'wikipedia.com' },
-      { title: 'wikipedia.com', link: 'wikipedia.com' },
-      { title: 'wikipedia.com', link: 'wikipedia.com' },
-      { title: 'wikipedia.com', link: 'wikipedia.com' },
-      { title: 'wikipedia.com', link: 'wikipedia.com' },
-      { title: 'wikipedia.com', link: 'wikipedia.com' },
-      { title: 'wikipedia.com', link: 'wikipedia.com' },
-      { title: 'wikipedia.com', link: 'wikipedia.com' },
-      {
-        title: 'ujang.com',
-      },
-    ],
-    description: `
-Consectetur praesentium nesciunt eum repellendus itaque ipsam animi vel veritatis magni laboriosam sunt sed deleniti similique sequi autem necessitatibus ad vitae corporis, voluptate commodi nulla. Cumque iure ratione fugiat officia!`,
+    image: '/img/dasiaolivacea.png',
+    source: [{ title: 'wikipedia.com', link: 'https://en.wikipedia.org/wiki/Dasia_olivacea' }],
+    description: `Dasia olivacea is a species of skink found in Southeast Asia. It's an arboreal skink that rarely comes down to the ground, except when it is breeding. D.olivacea was first described by John Edward Gray in 1839. D.olivacea has a green back and a yellowish belly. Its head is primarily a dark olive-green colour with black markings.`,
   },
 ];
 </script>

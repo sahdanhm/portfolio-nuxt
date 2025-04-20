@@ -1,7 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from '@tailwindcss/vite';
 export default defineNuxtConfig({
-  compatibilityDate: '2024-11-01',
+  app: {
+    head: {
+      title: 'syahdan',
+      htmlAttrs: {
+        lang: 'en',
+      },
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/img/favicon.png' }],
+    },
+  },
+  compatibilityDate: '2025-04-20',
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
 
@@ -9,7 +18,7 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
-  modules: ['@nuxtjs/google-fonts','@nuxt/image'],
+  modules: ['@nuxtjs/google-fonts', '@nuxt/image'],
   googleFonts: {
     families: {
       Alexandria: {

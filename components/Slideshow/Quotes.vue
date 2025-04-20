@@ -12,8 +12,8 @@ const quotes = [
   {
     id: 2,
     author: 'Syahdan Kasep',
-    quotes: `You can't blame gravity for falling in love.`,
-    image: '/img/me.png',
+    quotes: `Love is not just about having time with her/him. Love is about do something to make her/him safe, happy, comportable, and more.`,
+    image: '/img/me3.png',
   },
 ];
 
@@ -43,6 +43,9 @@ const carouselConfig = {
             <NuxtImg
               :src="quote.image"
               :alt="`${quote.author}-image`"
+              width="500"
+              height="500"
+              laout="responsive"
               format="webp"
             />
           </div>

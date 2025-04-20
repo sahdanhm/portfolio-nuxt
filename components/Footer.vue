@@ -103,9 +103,15 @@ const socialmedias = [
       </div>
     </div>
     <div class="grid lg:grid-cols-2 mt-5">
-      <SlideshowQuotes class="lg:order-last"/>
+      <SlideshowQuotes class="lg:order-last" />
       <div>
-        <p>&copy; syahdan 2025</p>
+         <NuxtImg
+                format="webp"
+                src="/img/thanks.png"
+                alt="thanks-image"
+                class="grayscale"
+              />
+        <p class="text-xs sm:text-base">&copy; syahdan 2025</p>
       </div>
     </div>
   </footer>
