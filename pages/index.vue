@@ -23,7 +23,7 @@ const me = [{ image: '/img/me.png' }];
               to="/about-him"
               class="text-5xl font alexandria-bold color1-text sm:text-7xl xl:text-9xl hover:underline"
             >
-              Syahdan
+              syahdan
             </NuxtLink>
             <p class="text-base mt-2 sm:text-2xl">
               is the <span class="color1-text">most attractive guy</span> in the
@@ -79,7 +79,7 @@ const me = [{ image: '/img/me.png' }];
     </div>
   </main>
 </template>
-<style scoped>
+<style>
 .section {
   margin-bottom: calc(var(--spacing) * 20);
 }

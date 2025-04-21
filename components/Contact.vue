@@ -16,7 +16,7 @@ const onSubmit = () => {
 </script>
 <template>
   <form
-    action="https://formsubmit.co/sahdanhusna057@gmail.com"
+    action="https://formsubmit.co/syahdanbusiness@gmail.com"
     method="post"
     @submit="onSubmit"
   >
